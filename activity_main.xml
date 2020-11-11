@@ -143,7 +143,7 @@
         app:layout_constraintVertical_bias="0.468" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_map"
         android:layout_width="184dp"
         android:layout_height="46dp"
         android:background="#706A6A"
@@ -159,7 +159,7 @@
 
     <Button
         android:onClick="nextScreen"
-        android:id="@+id/button2"
+        android:id="@+id/button_order"
         android:layout_width="147dp"
         android:layout_height="50dp"
         android:background="#706A6A"
@@ -196,8 +196,8 @@
 
     <Spinner
         android:id="@+id/spinner_provider"
-        android:layout_width="180dp"
-        android:layout_height="32dp"
+        android:layout_width="204dp"
+        android:layout_height="31dp"
         android:entries="@array/provider_list"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
