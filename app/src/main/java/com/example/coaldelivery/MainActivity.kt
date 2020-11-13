@@ -1,5 +1,6 @@
 package com.example.coaldelivery
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.text.InputFilter
@@ -10,7 +11,6 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -87,7 +87,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_map.setOnClickListener {
-            //Code
+            val goToNextScreen = Intent(this, MapActivity::class.java)
+            startActivity(goToNextScreen)
             Log.i("MainActivity", "button_map was clicked")
         }
 
