@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name" translatable="false">Уголёк</string>
+    <string name="provider">Поставщик</string>
+    <string name="coal">Марка угля</string>
+    <string name="price">Цена за тонну</string>
+    <string name="delivery_adress">Адрес доставки</string>
+    <string name="amount">Требуемая масса</string>
+    <string name="choose_location">Выбрать на карте</string>
+    <string name="adress_input">Введите адрес</string>
+    <string name="or">или</string>
+    <string name="delivery_distance">Расстояние</string>
+    <string name="delivery_price">Стоимость доставки</string>
+    <string name="total_price">Общая стоимость</string>
+    <string name="order">Заказать</string>
+    <string name="_0_40">(0-40)</string>
+
+</resources>
