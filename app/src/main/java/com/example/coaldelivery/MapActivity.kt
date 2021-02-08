@@ -1,6 +1,7 @@
 package com.example.coaldelivery
 
 import android.app.Activity
+import android.location.Geocoder
 import android.os.Bundle
 import android.view.View
 import com.yandex.mapkit.Animation
@@ -9,6 +10,7 @@ import com.yandex.mapkit.geometry.Point
 import com.yandex.mapkit.map.CameraPosition
 import com.yandex.mapkit.mapview.MapView
 
+
 class MapActivity : Activity() {
 
     private val MAPKIT_API_KEY = "ec73461a-e81d-455c-a8a8-647480a60124"
@@ -16,14 +18,11 @@ class MapActivity : Activity() {
     private var mapView: MapView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
-
         MapKitFactory.setApiKey(MAPKIT_API_KEY)
         MapKitFactory.initialize(this)
-
         // Создание MapView.
         setContentView(R.layout.activity_map)
         super.onCreate(savedInstanceState)
-
         mapView = findViewById<View>(R.id.mapview) as MapView
         // Перемещение камеры в центр Абакана.
         mapView!!.map.move(

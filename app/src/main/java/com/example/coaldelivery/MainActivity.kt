@@ -82,7 +82,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             override fun onNothingSelected(parent: AdapterView<*>?) {
-
             }
         }
 
@@ -93,10 +92,10 @@ class MainActivity : AppCompatActivity() {
         }
 
         button_order.setOnClickListener {
-            //val goToNextScreen = Intent(this, SecondActivity::class.java)
-            //startActivity(goToNextScreen)
-            var selected = spinner_coal.selectedItem.toString()
-            Toast.makeText(this, selected, Toast.LENGTH_SHORT).show()
+            val goToNextScreen = Intent(this, SecondActivity::class.java)
+            startActivity(goToNextScreen)
+            //var selected = spinner_coal.selectedItem.toString()
+            //Toast.makeText(this, selected, Toast.LENGTH_SHORT).show()
         }
     } //end of onCreate function
 } //end of MainActivity class

@@ -13,5 +13,7 @@
     <string name="total_price">Общая стоимость</string>
     <string name="order">Заказать</string>
     <string name="_0_40">(0-40)</string>
-
+    <string name="phone">Телефон</string>
+    <string name="value">value</string>
+    <string name="confirm">Подтвердить</string>
 </resources>
